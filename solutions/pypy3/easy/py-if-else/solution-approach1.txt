@@ -7,6 +7,12 @@
 # Language    pypy3
 # Status      Accepted
 # Submitted   2026-09-11, 04:20 p.m.
+# Technique   conditional-branching-logic
+# Time        O(1)
+# Space       O(1)
+# Insight     The code evaluates the parity and magnitude of the integer n to determine the output based on the specified conditional ranges.
+# Interview   Before: "I would use a series of if-else statements to check the parity and range constraints." After: "The implementation uses O(1) time and space to map the input n to the required output, correctly handling the inclusive range boundaries defined in the problem."
+# Pitfalls    (1) Failing to include the upper bound 20 in the 'Weird' condition for even numbers.  (2) Incorrectly ordering the conditional checks, causing even numbers in the range 6 to 20 to be misclassified as 'Not Weird'.  (3) Misinterpreting the inclusive range definitions, such as treating the range 2 to 5 as exclusive of 5.
 # ──────────────────────────────────────────────────
 
 import math
